@@ -15,6 +15,7 @@ export  default function Header(){
                 <li><a href="#">Log In</a></li>
                 </ul>
             </div>
+            
         </header>
 
     )
