@@ -1,27 +1,48 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import {faHouse} from '@fortawesome/free-solid-svg-icons';
+import {faCake} from '@fortawesome/free-solid-svg-icons';
+import {faCookie} from '@fortawesome/free-solid-svg-icons';
+import {faShoppingCart} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function SlideInMenu() {
    const[isOpen, setIsOpen] = React.useState(false);
+    const menuRef = useRef(null);
+    const iconRef = useRef(null);
+    
    const toggleSidebar = () => {
-    setIsOpen(!isOpen)
-
+    setIsOpen(prev => !prev);
    }
+   const handleClickOutside = (event) =>{
+    if(isOpen && menuRef.current && !menuRef.current.contains(event.target) &&
+    iconRef.current && !iconRef.current.contains(event.target)){
+      setIsOpen(false)
+    }
+   }
+   useEffect(() => {
+    document.addEventListener('click', handleClickOutside)
+    return () => {
+      document.removeEventListener('click', handleClickOutside)
+    };
+   }, [isOpen]);
   return (    
     <div className='sidebar'>
-        <div className={`sidebarContent ${isOpen ? 'open' : ''}`}>
+        <div ref={menuRef} className={`sidebarContent ${isOpen ? 'open' : ''}`}>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Our ready made Suggestions</a></li>
-                <li><a href="">Build your own Cake</a></li>
-                <li><a href="">Shopping Car</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Log In</a></li>
+                <li><a href=""><FontAwesomeIcon icon={faHouse}/> Home</a></li>
+                <li><a href=""><FontAwesomeIcon icon={faCookie} /> Our Favorite Bakes</a></li>
+                <li><a href=""><FontAwesomeIcon icon={faCake} /> Build your own Cake</a></li>
+                <li><a href=""><FontAwesomeIcon icon = {faShoppingCart}/> Shopping Car</a></li>
+                <li><a href=""><FontAwesomeIcon icon={faEnvelope} /> Contact</a></li>
+                <li><a href=""><FontAwesomeIcon icon={faRightToBracket} /> Log In</a></li>
             </ul>
             </div>
-       <div className={isOpen ? 'sidebarIconOpen' : 'sidebarIcon'} onClick={toggleSidebar}>
+       <div ref={iconRef} className={isOpen ? 'sidebarIconOpen' : 'sidebarIcon'} onClick={toggleSidebar}>
             <FontAwesomeIcon icon={faBars} />
         </div> 
       </div>
