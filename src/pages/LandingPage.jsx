@@ -22,6 +22,10 @@ export default function LandingPage(){
                     <img src={Karla} alt="Karla" />
                 </div>
             </div>
+            <section className='choosYourOption'>                                 
+                    <button className='buildYourOwnCake'>Build your own cake</button>                
+                    <button className='ourFavoriteBakes'>Our favorite Bakes</button>                
+            </section>
         </div>
     )
 }
