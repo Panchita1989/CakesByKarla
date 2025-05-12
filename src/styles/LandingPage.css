@@ -53,9 +53,10 @@ p{
     font-weight: 200;
 }
 .choosYourOption{
-    margin-left: 100px;
+    margin-left: 50px;
     padding: 20px;    
     width: 50%;
     display: flex;
     justify-content: center;
+    gap: 20px;
 }

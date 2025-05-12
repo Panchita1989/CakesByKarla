@@ -1,6 +1,6 @@
 import React from 'react'
 import Karla from '../assets/images/karla.jpg';
-import './LandingPage.css'
+import '../styles/LandingPage.css'
 
 
 export default function LandingPage(){
