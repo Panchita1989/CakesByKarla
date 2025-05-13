@@ -5,6 +5,7 @@ import '../styles/LandingPage.css'
 
 export default function LandingPage(){
     return(
+     
        <div className="wrapper">
             <h1 className="welcome">Welcome to Baked Goods by Karla</h1>
             <div className="landingPage">
@@ -27,5 +28,6 @@ export default function LandingPage(){
                     <button className='ourFavoriteBakes'>Our favorite Bakes</button>                
             </section>
         </div>
+          
     )
 }
