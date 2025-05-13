@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-.container{
-    margin-left: 400px;
-}
-img{
-    height: 200px
+body{
+  text-align: center;
+  
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Karla from '../assets/images/karla.jpg';
 import '../styles/LandingPage.css'
+import {Link} from 'react-router-dom'
 
 
 export default function LandingPage(){
@@ -23,9 +24,11 @@ export default function LandingPage(){
                     <img src={Karla} alt="Karla" />
                 </div>
             </div>
-            <section className='choosYourOption'>                                 
-                    <button className='buildYourOwnCake'>Build your own cake</button>                
-                    <button className='ourFavoriteBakes'>Our favorite Bakes</button>                
+            <section className='choosYourOption'>                        
+                    <button className='buildYourOwnCake'>Build your own cake</button>                  
+                <Link to='/choose' >                   
+                    <button className='ourFavoriteBakes'>Our favorite Bakes</button>   
+                </Link>             
             </section>
         </div>
           

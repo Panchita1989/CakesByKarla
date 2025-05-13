@@ -12,14 +12,15 @@ import ChooseYourCake from './pages/ChooseYourCake'
 function App() {
  return(
   <>
+
   <Header />
   <SlideInMenu />
   <Routes>
     <Route path="/" element={<LandingPage />} />
     <Route path='/choose' element={<ChooseYourCake />} />
   </Routes>
-  <ChooseYourCake />
   <Footer />
+
   </>
  )
   
