@@ -8,6 +8,7 @@ import SlideInMenu from './components/SlideInMenu'
 import LandingPage from './pages/LandingPage'  
 import ChooseYourCake from './pages/ChooseYourCake' 
 
+
 function App() {
  return(
   <>
@@ -17,6 +18,7 @@ function App() {
     <Route path="/" element={<LandingPage />} />
     <Route path='/choose' element={<ChooseYourCake />} />
   </Routes>
+  <ChooseYourCake />
   <Footer />
   </>
  )
