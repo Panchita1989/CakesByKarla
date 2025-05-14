@@ -8,12 +8,13 @@ import SlideInMenu from './components/SlideInMenu'
 import LandingPage from './pages/LandingPage'  
 import ChooseYourCake from './pages/ChooseYourCake' 
 import Contact from './pages/Contact'
+import ScrollToTop from './components/ScrollToTop'
 
 
 function App() {
  return(
   <>
-
+  <ScrollToTop />
   <Header />
   <SlideInMenu />
   <Routes>
