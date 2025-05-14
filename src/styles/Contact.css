@@ -1,7 +1,8 @@
 body{
     box-sizing: border-box;
+    font-family: Inter, Arial, Helvetica, sans-serif;
 }
-.contactForm{
+.contact{
     margin: 100px;
     display: flex;
     justify-content: space-between;
@@ -18,9 +19,12 @@ body{
        
 }
 
-form *{
+.wrapperForm input, 
+.wrapperForm textarea{
     border: 1px solid gray;
+    border-radius: 20px;
     width: 80%;
+    padding: 10px;
     
 }
 
@@ -33,9 +37,18 @@ form{
     align-items: center;
     margin-top: 50px;
 }
-img{
-    height: 600px;
+.wrapperImage img{
+    height: 700px;
     opacity: 0.85;
+    border-radius: 20%;
    
 }
 
+.login{
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+.login:hover{
+    color: rgb(195, 174, 170);
+}

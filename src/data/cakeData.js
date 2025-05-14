@@ -1,9 +1,9 @@
-import chocolate from './assets/images/chocolate.jpg'
-import vanilla from './assets/images/vanillaCake.jpg'
-import carrot from './assets/images/carrotCake.jpg'
-import cheescake from'./assets/images/cheescake.jpg'
-import chocolateChip from './assets/images/chocolateChip.jpg'
-import oat from './assets/images/oat.jpeg'
+import chocolate from '../assets/images/chocolate.jpg'
+import vanilla from '../assets/images/vanillaCake.jpg'
+import carrot from '../assets/images/carrotCake.jpg'
+import cheescake from'../assets/images/cheescake.jpg'
+import chocolateChip from '../assets/images/chocolateChip.jpg'
+import oat from '../assets/images/oat.jpeg'
 
 const cakes = [
     {
@@ -53,7 +53,7 @@ const cakes = [
             src: chocolateChip,
             alt:'ChocolateCookie'
         },
-        name: 'Chocolate Chips Cookies',
+        name: 'Double Chocolate Sandwich',
         description: 'A rich and creamy cheesecake topped with fresh mixed berries.',
         price: '$80 MXN' 
     },

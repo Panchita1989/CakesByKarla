@@ -1,11 +1,37 @@
 import '../styles/contact.css'
-import Brownie from '../assets/images/brownie.jpg'
+import FormComponent from '../components/FormComponent.jsx'
+import formConfig from '../data/formData.js'
+
+export default function Contact(){
+    return(
+        <FormComponent contact={formConfig.contact}
+        />
+    )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 export default function Contact() {
     return ( 
         <section className='contactForm'>
             <div className='wrapperForm'>
-            <h2>Send me a Message</h2>
+            <h2>Send me a Message as a Guest</h2>
+            <div>or</div>
+            <Link to='' className='login' >Log In first</Link>
+            
             <form action="get">
                 <input type="text" placeholder='Name' required/>
                 <input type="email" placeholder='email' required/>
@@ -18,11 +44,9 @@ export default function Contact() {
             </div>
         </section>
         
-    )
-        
-        
-        
-        
-    
+    )    
         
 }
+
+*/
+

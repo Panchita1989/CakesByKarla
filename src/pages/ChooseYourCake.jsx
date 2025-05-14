@@ -1,5 +1,5 @@
 import '../styles/ChooseYourCake.css'
-import data from '../cakeData.js'
+import data from '../data/cakeData.js'
 import CakeCard from '../components/CakeCard'
 
 

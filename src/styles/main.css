@@ -20,3 +20,14 @@ a:hover{
     font-size: 12px;
   
 }
+button{
+    text-align: center;
+    padding: 20px;    
+    margin: 40px 40px 0 0 ;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+
+}
