@@ -2,18 +2,15 @@ import formConfig from "../data/formData.js";
 import {Link} from 'react-router-dom'
 import '../styles/contact.css'
 
-export default function FormComponent(props) {
+export default function FormComponent({formData}) {
     
     return(
         <section className='contact'>
             <div className='wrapperForm'>
-                <h2>{props.contact.title}</h2>
-                <div>or</div>
-                <Link to='' className='login' >Log In first</Link>
+                <h2>{formData.title}</h2>
+                <Link to={formData.linkTo} className='login' >{formData.option}</Link>
                 <form>
-            
-
-                    {props.contact.fields.map((field)=>{
+                    {formData.fields.map((field)=>{
                     if( field.type === 'textarea') {
                         return (  
                             <textarea        
@@ -48,7 +45,7 @@ export default function FormComponent(props) {
                 </form>
             </div> 
             <section className='wrapperImage'>
-                <img src= {props.contact.image.src} alt="" />
+                <img src= {formData.image.src} alt="" />
             </section>
         
         </section>           

@@ -4,7 +4,7 @@ import formConfig from '../data/formData.js'
 
 export default function Contact(){
     return(
-        <FormComponent contact={formConfig.contact}
+        <FormComponent formData={formConfig.contact}
         />
     )
 }

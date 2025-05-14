@@ -8,6 +8,7 @@ import SlideInMenu from './components/SlideInMenu'
 import LandingPage from './pages/LandingPage'  
 import ChooseYourCake from './pages/ChooseYourCake' 
 import Contact from './pages/Contact'
+import Login from './pages/LogIn'
 import ScrollToTop from './components/ScrollToTop'
 
 
@@ -21,6 +22,7 @@ function App() {
     <Route path="/" element={<LandingPage />} />
     <Route path='/choose' element={<ChooseYourCake />} />
     <Route path ='/contact' element={<Contact />} />
+    <Route path='/login' element={<Login />}/>
   </Routes>
   <Footer />
 

@@ -1,22 +1,11 @@
 import {Link} from 'react-router-dom'
+import FormComponent from '../components/FormComponent'
+import formConfig from '../data/formData.js'
+import '../styles/contact.css'
 
 export default function Login() {
     return(
-    <section className='loginForm'>
-        <div className='wrapperForm'>
-            <h2>Log In</h2>
-            <div>or</div>
-            <Link to='' className='login' >Signe Up</Link>
-    
-            <form action="get">
-                <input type="email" placeholder='email' required/>
-                <input type='password' required/>
-                <button type='submit' >Log in</button>
-            </form>
-        </div>
-        <div className='wrapperImage'>
-            <img src={Brownie} alt="Brownie" />
-        </div>
-    </section>
+        <FormComponent formData={formConfig.login}
+        />
     )
 }
