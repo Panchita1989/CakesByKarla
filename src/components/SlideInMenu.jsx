@@ -41,6 +41,7 @@ export default function SlideInMenu() {
               <Link to= '' onClick = {()=> setIsOpen(false)}><li><FontAwesomeIcon icon={faCake} /> Build your own Cake</li></Link>
               <Link to= '' onClick = {()=> setIsOpen(false)}><li><FontAwesomeIcon icon={faShoppingCart} /> Shopping Cart</li></Link>
               <Link to= '/contact' onClick = {()=> setIsOpen(false)}><li><FontAwesomeIcon icon={faEnvelope} /> Contact</li></Link>
+              <Link to='' onClick ={() => setIsOpen(false)}><li><FontAwesomeIcon icon={faRightToBracket} /> Log In</li></Link>
             </ul>
             </div>
       </div>
