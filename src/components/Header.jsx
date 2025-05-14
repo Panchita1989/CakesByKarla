@@ -19,7 +19,7 @@ export  default function Header(){
                 <ul>
                 <Link to='/'><li><FontAwesomeIcon icon={faHouse}/></li></Link>
                 <Link to='https://www.instagram.com/karla_arroyave/' target='blank'><li><FontAwesomeIcon icon = {faInstagram} /></li></Link>
-                <Link to=''><li><FontAwesomeIcon icon = {faEnvelope} /></li></Link>
+                <Link to='/contact'><li><FontAwesomeIcon icon = {faEnvelope} /></li></Link>
                 <Link to=''><li><FontAwesomeIcon icon = {faRightToBracket} /></li></Link>
                 </ul>
             </div>

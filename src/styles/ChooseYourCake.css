@@ -7,3 +7,6 @@ body{
 select{
   z-index: 90000;
 }
+.option{
+  width: 15%;
+}

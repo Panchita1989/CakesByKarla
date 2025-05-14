@@ -1,7 +1,7 @@
 import chocolate from './assets/images/chocolate.jpg'
 import vanilla from './assets/images/vanillaCake.jpg'
 import carrot from './assets/images/carrotCake.jpg'
-import cheescake from'./assets/images/cheescake.jpeg'
+import cheescake from'./assets/images/cheescake.jpg'
 import chocolateChip from './assets/images/chocolateChip.jpg'
 import oat from './assets/images/oat.jpeg'
 

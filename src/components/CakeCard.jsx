@@ -1,3 +1,4 @@
+import '../styles/ChooseYourCake.css'
 
 export default function CakeCard(props) {
     return(
@@ -14,7 +15,7 @@ export default function CakeCard(props) {
                 <p className="mt-4 text-lg font-medium text-gray-900">{props.price}</p>
             </div>         
             <form className="p-4 border-t">
-                    <select 
+                    <select  className='option'                
                         name="value"
                     >
                         <option value="1">1</option>

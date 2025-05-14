@@ -18,16 +18,21 @@ export default function LandingPage(){
                         My goal is to make something that feels personal, tastes great, and fits the occasion – handmade, honest, and with attention to detail.</p>
                     <h2>What we offer</h2>
                     <p> With us, you can order cakes that match your personal taste – either by choosing your own ingredients or picking from our ready-made suggestions. Whether you prefer something chocolatey, fruity, or unique: every cake is freshly baked and thoughtfully made.</p>
-                    
-                    <button className='contactMe'>Contact Me</button>
+                    <section className='contact'>
+                    <Link to='/contact'>
+                    <button >Contact Me</button>
+                    </Link>
+                    </section>
                     
                 </div>
                 <div className='fotoKarla'>
                     <img src={Karla} alt="Karla" />
                 </div>
             </div>
-            <section className='choosYourOption'>                        
-                    <button className='buildYourOwnCake'>Build your own cake</button>                  
+            <section className='choosYourOption'> 
+                <Link>                       
+                    <button className='buildYourOwnCake'>Build your own cake</button>  
+                </Link>                
                 <Link to='/choose' >                   
                     <button className='ourFavoriteBakes'>Our favorite Bakes</button>   
                 </Link>             

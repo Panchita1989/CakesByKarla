@@ -3,15 +3,8 @@ body{
     background-color: #e8e3e6;
     box-sizing: border-box;
     color: #5A5A54;
+}
 
-}
-a{
-    text-decoration: none;
-    color: #5A5A54;
-    font-size: 0.8rem;
-    display: inline-block;
-    
-}
 li{
     list-style: none;
   

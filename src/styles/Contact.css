@@ -1,0 +1,41 @@
+body{
+    box-sizing: border-box;
+}
+.contactForm{
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapperForm{
+    width: 50%;
+    
+}
+
+.wrapperImage{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+       
+}
+
+form *{
+    border: 1px solid gray;
+    width: 80%;
+    
+}
+
+form{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+}
+img{
+    height: 600px;
+    opacity: 0.85;
+   
+}
+
