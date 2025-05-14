@@ -9,6 +9,7 @@ import LandingPage from './pages/LandingPage'
 import ChooseYourCake from './pages/ChooseYourCake' 
 import Contact from './pages/Contact'
 import Login from './pages/LogIn'
+import Signeup from './pages/SigneUp'
 import ScrollToTop from './components/ScrollToTop'
 
 
@@ -23,6 +24,8 @@ function App() {
     <Route path='/choose' element={<ChooseYourCake />} />
     <Route path ='/contact' element={<Contact />} />
     <Route path='/login' element={<Login />}/>
+    <Route path='/signeup' element={<Signeup />}/>
+    
   </Routes>
   <Footer />
 

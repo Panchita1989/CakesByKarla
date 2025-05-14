@@ -6,6 +6,8 @@ body{
 }
 select{
   z-index: 90000;
+  border: 1px solid #5A5A54;
+  text-align: center;
 }
 .option{
   width: 15%;

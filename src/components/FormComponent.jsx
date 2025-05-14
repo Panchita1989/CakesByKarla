@@ -11,29 +11,30 @@ export default function FormComponent({formData}) {
                 <Link to={formData.linkTo} className='login' >{formData.option}</Link>
                 <form>
                     {formData.fields.map((field)=>{
-                    if( field.type === 'textarea') {
-                        return (  
-                            <textarea        
-                                key={field.id}
-                                name= {field.name}
-                                type= {field.type}
-                                rows = {field.rows}
-                                required = {field.required}
+                    if(field.type === 'textarea') {
+                     return (  
+                        <textarea        
+                            key={field.id}
+                            label={field.label}
+                            name= {field.name}
+                            type= {field.type}
+                            rows = {field.rows}
+                            required = {field.required}
                             />                        
-                        )}  
-                    else if(field.type === 'submit'){
-                        return(
-                            <button
-                                key={field.id}
-                                name={field.name}
-                                type={field.type}
-                            >
-                                {field.content}
-                            </button>                        
+                )} else if(field.type === 'submit'){
+                    return(
+                        <button
+                            key={field.id}
+                            label={field.label}
+                            name={field.name}
+                            type={field.type}                            >
+                            {field.content}
+                        </button>                        
                 )} else{
                     return(
                         <input
                             key={field.id}
+                            label={field.label}
                             type={field.type}
                             name={field.name}
                             placeholder={field.placeholder}
