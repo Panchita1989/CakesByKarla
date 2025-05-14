@@ -45,6 +45,7 @@ button:hover{
 }
 h1{
     font-weight: 300;
+    padding: 30px
 }
 h2{
     font-weight: 300;
@@ -59,4 +60,11 @@ p{
     display: flex;
     justify-content: center;
     gap: 20px;
+ 
+}
+.contactMe{
+    margin-top: 50px;
+}
+button{
+    border: 1px solid gray;
 }

@@ -18,7 +18,9 @@ export default function LandingPage(){
                         My goal is to make something that feels personal, tastes great, and fits the occasion – handmade, honest, and with attention to detail.</p>
                     <h2>What we offer</h2>
                     <p> With us, you can order cakes that match your personal taste – either by choosing your own ingredients or picking from our ready-made suggestions. Whether you prefer something chocolatey, fruity, or unique: every cake is freshly baked and thoughtfully made.</p>
-                    <button>Contact Me</button>
+                    
+                    <button className='contactMe'>Contact Me</button>
+                    
                 </div>
                 <div className='fotoKarla'>
                     <img src={Karla} alt="Karla" />

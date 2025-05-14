@@ -31,22 +31,25 @@ export default function SlideInMenu() {
       document.removeEventListener('click', handleClickOutside)
     };
    }, [isOpen]);
-  return (    
+  return (  
+    <>
     <div className='sidebar'>
         <div ref={menuRef} className={`sidebarContent ${isOpen ? 'open' : ''}`}>
             <ul>
-              <Link to='/'><li><FontAwesomeIcon icon={faHouse}/> Home</li></Link>
-              <Link to= '/choose'><li><FontAwesomeIcon icon={faCookie} /> Our Favorite Bakes</li></Link>
-              <Link to= ''><li><FontAwesomeIcon icon={faCake} /> Build your own Cake</li></Link>
-              <Link to= ''><li><FontAwesomeIcon icon={faShoppingCart} /> Shopping Cart</li></Link>
-              <Link to= ''><li><FontAwesomeIcon icon={faEnvelope} /> Contact</li></Link>
+              <Link to='/' onClick={()=> setIsOpen(false)}><li><FontAwesomeIcon icon={faHouse}/> Home</li></Link>
+              <Link to= '/choose' onClick ={()=> setIsOpen(false)}><li><FontAwesomeIcon icon={faCookie} /> Our Favorite Bakes</li></Link>
+              <Link to= '' onClick = {()=> setIsOpen(false)}><li><FontAwesomeIcon icon={faCake} /> Build your own Cake</li></Link>
+              <Link to= '' onClick = {()=> setIsOpen(false)}><li><FontAwesomeIcon icon={faShoppingCart} /> Shopping Cart</li></Link>
+              <Link to= '/contact' onClick = {()=> setIsOpen(false)}><li><FontAwesomeIcon icon={faEnvelope} /> Contact</li></Link>
             </ul>
             </div>
-       <div ref={iconRef} className={isOpen ? 'sidebarIconOpen' : 'sidebarIcon'} onClick={toggleSidebar}>
+      </div>
+      <div ref={iconRef} className={isOpen ? 'sidebarIconOpen' : 'sidebarIcon'} onClick={toggleSidebar}>
             <FontAwesomeIcon icon={faBars} />
         </div> 
-      </div>
+        </>  
   )
+  
 }
 
 

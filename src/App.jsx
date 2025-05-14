@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import SlideInMenu from './components/SlideInMenu'
 import LandingPage from './pages/LandingPage'  
 import ChooseYourCake from './pages/ChooseYourCake' 
+import Contact from './pages/Contact'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   <Routes>
     <Route path="/" element={<LandingPage />} />
     <Route path='/choose' element={<ChooseYourCake />} />
+    <Route path ='/contact' element={<Contact />} />
   </Routes>
   <Footer />
 
