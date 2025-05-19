@@ -5,7 +5,6 @@ import '../styles/contact.css'
 export default function FormComponent({formData}) {
     
     return(
-        <section className='contact'>
             <div className='wrapperForm'>
                 <h2>{formData.title}</h2>
                 <Link to={formData.linkTo} className='login' >{formData.option}</Link>
@@ -15,7 +14,6 @@ export default function FormComponent({formData}) {
                      return (  
                         <textarea        
                             key={field.id}
-                            label={field.label}
                             name= {field.name}
                             type= {field.type}
                             rows = {field.rows}
@@ -25,7 +23,6 @@ export default function FormComponent({formData}) {
                     return(
                         <button
                             key={field.id}
-                            label={field.label}
                             name={field.name}
                             type={field.type}                            >
                             {field.content}
@@ -34,7 +31,6 @@ export default function FormComponent({formData}) {
                     return(
                         <input
                             key={field.id}
-                            label={field.label}
                             type={field.type}
                             name={field.name}
                             placeholder={field.placeholder}
@@ -44,11 +40,6 @@ export default function FormComponent({formData}) {
                 })} 
             
                 </form>
-            </div> 
-            <section className='wrapperImage'>
-                <img src= {formData.image.src} alt="" />
-            </section>
-        
-        </section>           
+            </div>                 
     )
 }

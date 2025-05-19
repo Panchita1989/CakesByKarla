@@ -7,9 +7,7 @@ import Footer from './components/Footer'
 import SlideInMenu from './components/SlideInMenu'
 import LandingPage from './pages/LandingPage'  
 import ChooseYourCake from './pages/ChooseYourCake' 
-import Contact from './pages/Contact'
-import Login from './pages/LogIn'
-import Signeup from './pages/SigneUp'
+import FormWrapper from './components/formWrapper'
 import ScrollToTop from './components/ScrollToTop'
 
 
@@ -22,9 +20,9 @@ function App() {
   <Routes>
     <Route path="/" element={<LandingPage />} />
     <Route path='/choose' element={<ChooseYourCake />} />
-    <Route path ='/contact' element={<Contact />} />
-    <Route path='/login' element={<Login />}/>
-    <Route path='/signeup' element={<Signeup />}/>
+    <Route path ='/contact' element={<FormWrapper />} />
+    <Route path='/login' element={<FormWrapper />}/>
+    <Route path='/signeup' element={<FormWrapper />}/>
     
   </Routes>
   <Footer />

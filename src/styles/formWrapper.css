@@ -1,0 +1,94 @@
+
+.formWrapper{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.formSection{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    width: 50%;
+}
+.wrapperForm{
+    width: 100%;
+}
+
+.imageSection{
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+    justify-content: center;
+}
+.imageSection img{
+    height: 800px;
+    opacity: 0.75;
+    border-radius: 20%;
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+}
+.formSection{
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+}
+.formSection.left {
+  animation: slideFormRight 0.7s forwards;
+}
+
+.formSection.right {
+  animation: slideFormLeft 0.7s forwards;
+}
+
+.imageSection.left img{
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideInFromLeft 0.7s forwards;
+}
+.imageSection.right img{
+    transform: translateX(100%);
+    opacity: 0;
+    animation: slideInFromRight 0.7s forwards;
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 0.75;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 0.75;
+  }
+}
+
+@keyframes slideFormLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFormRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -12,13 +12,6 @@ body{
     
 }
 
-.wrapperImage{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-       
-}
-
 .wrapperForm input, 
 .wrapperForm textarea{
     border: 1px solid gray;
@@ -36,12 +29,6 @@ form{
     width: 100%;
     align-items: center;
     margin-top: 50px;
-}
-.wrapperImage img{
-    height: 800px;
-    opacity: 0.75;
-    border-radius: 20%;
-   
 }
 
 .login{

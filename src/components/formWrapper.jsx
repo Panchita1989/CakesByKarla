@@ -1,20 +1,19 @@
 import React from 'react'
 import '../styles/formWrapper.css'
+import '../styles/Contact.css'
+import formConfig from "../data/formData.js";
 import {useEffect, useState, useRef} from 'react'
 import { useLocation } from 'react-router-dom'
-import Contact from '../pages/Contact'
-import SigneUp from '../pages/SigneUp'
-import LogIn from '../pages/LogIn'
+import FormComponent from './FormComponent'
+
 
 export default function FormWrapper(){
 
     const location = useLocation()
 
     const getInitialForm = () => {
-        if(pathname.includes('login')) return 'login'
-        if(pathname.includes('contact')) return 'contact'
-        if(pathname.includes('signeup')) return 'signeup'
-
+        if(location.pathname.includes('login')) return 'login'
+        if(location.pathname.includes('signeup')) return 'signeup'
         return 'contact'
     }
     
@@ -32,21 +31,42 @@ export default function FormWrapper(){
         ? 'contact'
         : 'signeup'
 
-        if(!activeForm.includes('contact', 'login', 'signeup')){
-            setCameFromOutside(true)
-        }
+        //when my from url changes
+        
+        
+        
         if(activeForm !== newForm){
-            if(camefromOutside){
-                setDirection('none')
-                setCameFromOutside('false')
-                imagePosition('right')
-            }else{
-                imagePosition => !imagePosition
-            }
-            
-            
+            setDirection(prev =>(prev === 'right' ? 'left' : 'right'))
+            setImagePosition(prev =>(prev === 'right' ? 'left' : 'right'))
+           
         }
 
-    })
+        setActiveForm(newForm)
+    }, [location.pathname])
+    const image = formConfig[activeForm].image
+
+    return(
+        <div className='formWrapper'>
+            {imagePosition === 'right' ? (
+                <>
+                    <div className={`formSection ${direction}`}><FormComponent formData ={formConfig[activeForm]}/></div>
+                    <div className={`imageSection ${direction}`}>
+                        <img src={formConfig[activeForm].image.src} alt={formConfig[activeForm].image.alt} />
+                    </div>
+                </>
+            ) : (
+                <>
+                    <div className={`imageSection ${direction}`}>
+                        <img src={formConfig[activeForm].image.src} alt={formConfig[activeForm].image.alt} />
+                    </div>
+                    <div className={`formSection ${direction}`}><FormComponent formData ={formConfig[activeForm]}/></div>
+                </>
+        
+    )
 
 }
+</div>
+    )
+}
+
+
