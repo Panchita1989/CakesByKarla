@@ -1,0 +1,32 @@
+.buildYourOwnWrapper{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+.wrapper h2{
+    margin: 50px;
+}
+.electionForm{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.foto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.foto img{
+    height: 650px;
+    border-radius: 20%;
+    opacity: 0.75;
+}
+.electionForm label{
+  margin-bottom: -40px;
+}
+select{
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}

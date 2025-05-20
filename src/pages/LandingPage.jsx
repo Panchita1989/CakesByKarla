@@ -30,7 +30,7 @@ export default function LandingPage(){
                 </div>
             </div>
             <section className='choosYourOption'> 
-                <Link>                       
+                <Link to='/buildYourOwn'>                        
                     <button className='buildYourOwnCake'>Build your own cake</button>  
                 </Link>                
                 <Link to='/choose' >                   
