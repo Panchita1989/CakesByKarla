@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 export default function LandingPage(){
     return(
      
-       <div className="wrapper">
+       <div className="wrapperLanding">
             <h1 className="welcome">Welcome to Baked Goods by Karla</h1>
             <div className="landingPage">
                 <div className='description'>

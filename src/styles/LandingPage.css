@@ -1,7 +1,6 @@
 .landingPage {
     display: flex;
     justify-content: center;
-    
 }
 .wrapper {
     text-align: center;
@@ -32,6 +31,7 @@ button{
   margin-top: 20px;   
   border: 1px solid gray;
 }
+
 button:hover{
     background-color: rgba(107, 107, 98, 0.9);
     color: #e5e5d5;
@@ -74,4 +74,42 @@ p{
 .welcome{
     font-weight: 500;
     font-size: 2rem;
+}
+@media screen and (max-width: 1200px) {
+    .fotoKarla{
+        display: none;
+    }
+    .choosYourOption{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .landingPage{
+        width: 100%;
+    }
+    .description{
+        display: block;
+        text-align: justify;
+        width: 100%;
+        margin: 0 0 0 30px;
+    }
+    .wrapper h2{
+       margin: 0;
+    }
+    .description h2{
+        margin: 0;
+    }
+    .wrapperLanding{
+        min-height: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .choosYourOption{
+        display: flex;
+        flex-direction: column;
+    }
 }

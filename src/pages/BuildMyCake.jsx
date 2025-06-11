@@ -6,7 +6,7 @@ export default function BuildMyCake(){
 
     return(
         <section className= 'wrapper'>
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900">Choose your favorite ingredients and we will make your favorite Cake</h2>
+            <h3 className="text-2xl font-bold tracking-tight text-gray-900">Choose your favorite ingredients and we will make your favorite Cake</h3>
             <section className ='buildYourOwnWrapper'>
             <section className='electionForm'>
                 <form >
